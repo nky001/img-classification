@@ -60,9 +60,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 ```
 
-## Contributors
-
-- [@nky001](https://github.com/nky001)
 
 ## License
 
