@@ -51,16 +51,14 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 import hashlib
 
-# Function to download images from a webpage
+
 def download_images(url, folder_path):
-    # Define headers to request higher quality images
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
 
     # Send an HTTP request to the URL with the specified headers
     response = requests.get(url, headers=headers)
     
-    # Check if the request was successful (status code 200)
     if response.status_code == 200:
         # Parse the HTML content
         soup = BeautifulSoup(response.text, 'html.parser')
