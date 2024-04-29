@@ -93,9 +93,7 @@ def download_images(url, folder_path):
 webpage_url = 'https://www.gettyimages.in/photos/rohit-shetty?assettype=image&family=editorial&phrase=rohit%20shetty&sort=mostpopular'
 download_folder = r"C:\Users\Lenovo\Documents\data science\image-classification\images\rohit_shetty"
 
-# Create the download folder if it doesn't exist
-os.makedirs(download_folder, exist_ok=True)
 
-# Call the download_images function
+os.makedirs(download_folder, exist_ok=True)
 download_images(webpage_url, download_folder)
 
